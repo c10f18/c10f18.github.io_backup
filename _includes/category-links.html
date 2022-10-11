@@ -1,0 +1,31 @@
+{% comment %}
+  Dynamically generate list of links to all category pages
+{% endcomment %}
+
+{% assign pages_list = site.pages| where: "menu", true |sort:"sidebar_sort_order" %}
+{% assign subpages   = site.pages| where: "menu", false|sort:"sidebar_sort_order" %}
+
+{% assign count = 0%}
+{% for node in pages_list %}
+  {% if node.title != null %}
+    {% if node.layout == "category" %}
+    {% assign count = count | plus: 1 %}
+      <div  class="list-wrapper">
+	  <a class="category-link {% if page.url == node.url %} active{% endif %}"
+          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+	    {% if node.submenu %}<label class="folder" for="list-item-{{ count }}">▾</label>{% endif %}
+	  </div>
+      <ul class="list-body">
+		{% for subnode in subpages %}
+			{% if subnode.layout == "category" %}
+			    {% if subnode.category == node.title %}	
+					<li>
+					<a class="sidebar-nav-subitem{% if page.url == subnode.url %} active{% endif %}" href="{{ subnode.url | relative_url }}">{{ subnode.title }}</a>
+					</li>
+				{% endif %}
+            {% endif %}
+		{% endfor %}
+	  </ul>
+	{% endif %}
+  {% endif %}
+{% endfor %}
