@@ -9,6 +9,7 @@ permalink:        pretty
 
 # Setup
 title:            C10F18
+email:            sallyiam00@gmail.com
 tagline:          'A Jekyll theme'
 description:      'Perfluorodecalin'
 url:              /
@@ -22,6 +23,7 @@ paginate:         5
 
 # Custom vars
 version:          0.0.1
+sidebar_home_link:  true
 
 github:
   repo:           /
