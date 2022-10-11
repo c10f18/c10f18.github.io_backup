@@ -13,7 +13,7 @@ email:            sallyiam00@gmail.com
 tagline:          'A Jekyll theme'
 description:      'Perfluorodecalin'
 url:              https://c10f18.github.io
-baseurl:          /
+baseurl:          ""
 
 author:
   name:           'Decalin'
