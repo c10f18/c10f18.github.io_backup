@@ -12,8 +12,8 @@ title:            C10F18
 email:            sallyiam00@gmail.com
 tagline:          'A Jekyll theme'
 description:      'Perfluorodecalin'
-url:              https://c10f18.github.io
-baseurl:          ''
+url:              http://hyde.getpoole.com
+baseurl:          /
 
 author:
   name:           'Decalin'
