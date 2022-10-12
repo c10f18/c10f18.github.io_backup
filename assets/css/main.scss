@@ -2,5 +2,13 @@
 # Use a comment to ensure Jekyll reads the file to be transformed into CSS later
 # only main files contain this front matter, not partials.
 ---
-
+@charset "utf-8";
 @import "hydeout";
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+#sidebar {
+  .site-title {
+    font-family: 'Courier Prime', monospace;
+  }
+}
