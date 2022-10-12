@@ -13,6 +13,8 @@
   }
   .site-title {
     font-family: 'Courier Prime', monospace;
-    font-size: 3.25rem !important;
+    a {
+      font-size: 3.25rem !important;
+    }
   }
 }
