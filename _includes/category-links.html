@@ -11,9 +11,9 @@
     {% if node.layout == "category" %}
     {% assign count = count | plus: 1 %}
       <div  class="list-wrapper">
+      	  {% if node.submenu %}<label class="folder" for="list-item-{{ count }}">▾</label>{% endif %}
 	  <a class="category-link {% if page.url == node.url %} active{% endif %}"
           href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
-	    {% if node.submenu %}<label class="folder" for="list-item-{{ count }}">▾</label>{% endif %}
 	  </div>
       <ul class="list-body">
 		{% for subnode in subpages %}
