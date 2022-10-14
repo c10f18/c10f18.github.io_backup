@@ -46,12 +46,12 @@
   }
 
   a {
-      color: $default;
+      color: $body-color;
       text-decoration: none;
   }
  
   a:hover {
-     color:$theme-color;
+     color:$body-muted;
   }
 }
 
@@ -117,7 +117,7 @@
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid $lightgrey;
+  border-top: 1px solid $gray-6;
 }
 .related-posts {
   padding-left: 0;
