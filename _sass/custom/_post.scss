@@ -3,7 +3,7 @@
   position: absolute;
   right: 0px;
   width: 240px;
-  color: $default;
+  color: $body-color;
   overflow-y: auto;
   overflow-x: hidden;
   padding-left: 0.75rem;
@@ -81,7 +81,7 @@
   }
 
   .post-title {
-    color: $theme-color;
+    color: $heading-color;
     margin-top: 0;
   }
 
@@ -89,7 +89,7 @@
     display: inline-block;
     margin-top: -.5rem;
     margin-bottom: 1rem;
-    color: $post-date-color;
+    color: $body-muted;
   }
 
   .post-more {
@@ -131,7 +131,7 @@
   color: #999;
 }
 .related-posts li a:hover {
-  color: $theme-color;
+  color: $body-color;
   text-decoration: none;
 }
 .related-posts li a:hover small {
